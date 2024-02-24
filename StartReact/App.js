@@ -8,6 +8,12 @@
 
 // ReactElement(object) = HTML(browser understands)
 //Nested html structure inside react app
+
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 const parent = React.createElement(
     "div", 
     { id: "parent" },

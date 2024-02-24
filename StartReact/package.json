@@ -1,0 +1,34 @@
+{
+  "name": "startreact",
+  "version": "1.0.0",
+  "description": "This is a react application",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/satyam5raj/namaste-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Satyam Raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satyam5raj/namaste-react/issues"
+  },
+  "homepage": "https://github.com/satyam5raj/namaste-react#readme",
+  "devDependencies": {
+    "@types/react": "^18.2.58",
+    "@types/react-dom": "^18.2.19",
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 Chrome version"
+  ]
+}
