@@ -11,8 +11,9 @@ const Body = () => {
 
     const handleFilterClick = () => {
         const filteredList = listOfRestaurant.filter(res => parseFloat(res.info.avgRating) > 4.3);
-        setListOfrestaurant(filteredList)
-        // console.log(filtered); 
+        // setListOfrestaurant(filteredList)
+        setFilteredRestraunt(filteredList)
+        // console.log(filteredList); 
     }
 
     const handleSearch = () => {
@@ -39,7 +40,9 @@ const Body = () => {
         setFilteredRestraunt(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }   
 
-    return listOfRestaurant.length === 0 ? <Shimmer /> : (
+    if(listOfRestaurant.length === 0) return <Shimmer />
+
+    return (
         <div className='body'>
             <div className='filter'>
                 <div className="search">
